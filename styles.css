@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --dark_blue: #23364D;
+}
+html{
+    font-family: "Barlow Semi Condensed";
+    font-size: 62.5%;
+    color: white;
+    font-family: "Overpass";
+}
+header,footer,section{
+    padding: 3%;
+    margin-bottom: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Light_grayish_blue);
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: hsl(210, 50%, 40%); 
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgray;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--dark_blue);
+    height: 70px;
+}
+
+img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+img:hover{
+    cursor: pointer;
+}
+.main{
+    background-color: var(--dark_blue);
+    height: 300px;
+    text-align: center;
+}
+footer{
+    background-color: var(--dark_blue);
+    height: 100px;
+    margin-top: 500px;
+}
+.rect_cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    row-gap: 25px;
+    column-gap: 25px;
+}
+.rect{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    height: 200px;
+    margin: 10px;
+    margin-top: 100px;
+    padding: 10px;
+    --g: 4px;
+    --b: 5px;
+    --c: #263238;
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(50%);
+    transition: .3s;
+}
+.rect:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+}
+.slogan{
+    font-size: 4rem;
+    padding: 3rem;
+}
+.content{
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    padding: 15px;
+}
