@@ -105,10 +105,22 @@ footer{
 .slogan{
     font-size: 4rem;
     padding: 3rem;
+    text-transform: uppercase;
+    transition: 900ms ease;
+    font-variation-settings: "wght" 311;
+    color: white;
+    outline: none;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+.slogan:hover {
+    font-variation-settings: "wght" 582;
+    letter-spacing: 3px;
 }
 .content{
     color: black;
-    font-size: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
     margin-bottom: 0px;
     padding: 15px;
 }
