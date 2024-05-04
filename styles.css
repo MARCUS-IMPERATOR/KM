@@ -64,7 +64,7 @@ footer{
 }
 .rect_cont{
     display: grid;
-    grid-template-columns: repeat(3,1fr) ;
+    grid-template-columns: repeat(4,1fr) ;
     row-gap: 25px;
     column-gap: 25px;
 }
