@@ -13,9 +13,14 @@
     </header>
     <section class="main">
         <h1 class="slogan">Your Gateway to Computer Science</h1>
+        <div class="search-cont">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()"><img src="Assets/images/search.svg" alt="" class="srch_icon"></button>
+        </div>
     </section>
     <section class="content"><h1>Contenu</h1></section>
     <hr>
+    <div id="results"></div>
     <div class="rect_cont">
         <a href="pages/faq.html">
             <section class="rect">
@@ -44,7 +49,7 @@
     </div>    
     <footer class="footer">
         <img src="Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
-        <h1 class="sub">All rights reserved</h1>
+        <h1 class="rights">All rights reserved</h1>
     </footer>
     <script src="script.js"></script>
 </body>

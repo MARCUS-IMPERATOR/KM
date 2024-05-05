@@ -53,17 +53,25 @@ img:hover{
     cursor: pointer;
 }
 .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
     background-color: var(--dark_blue);
-    height: 300px;
+    height: 400px;
     text-align: center;
 }
 footer{
     display: flex;
     flex-direction: row;
-    gap: 90rem;
     background-color: var(--dark_blue);
     height: 100px;
     margin-top: 500px;
+}
+.rights{
+    margin-left: auto;
 }
 .rect_cont{
     padding: 5rem;
@@ -73,7 +81,6 @@ footer{
     column-gap: 25px;
 }
 .rect{
-
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -123,4 +130,68 @@ footer{
     font-size: 2rem;
     margin-bottom: 0px;
     padding: 15px;
+}
+#results{
+    color: #23364D;
+    font-size: 5rem;
+}
+.search-cont{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    height: 50px;
+    width: 50px;
+    border: 1px solid red;
+    border-radius: 100vh;
+    background-color: white;
+    padding: 2px;
+    transition: width 430ms cubic-bezier(0, 0.9, 0.12, 1.15);
+    overflow: hidden;
+}
+#searchInput{
+    flex-grow: 1;
+    border: 0 transparent;
+    border-radius: 50vh;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    background-color: white;
+    width: 100%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 100vh;
+    border: 0;
+    cursor: pointer;
+    margin-left: auto;
+    transition: background 150ms ease-in-out;
+    z-index: 1;
+}
+.srch_icon{
+    width: 35px;
+    height: 35px;
+}
+
+.search-cont:focus-within{
+    width: 80%;
+    button{
+        background-color: #999999;
+    }
+    #searchInput{
+        opacity: 1;
+        background-color: white;
+        border: 0;
+        cursor: text;
+    }
 }
