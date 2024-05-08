@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+::-webkit-scrollbar{
+    width: 3px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background:white;
+
+}
+::-webkit-scrollbar-thumb{
+    background: lightblue;
+    border-radius: 10px;
+   
+}
 :root{
     --dark_blue: #23364D;
 }
@@ -8,9 +21,19 @@ html{
     color: white;
     font-family: "Overpass";
 }
-header,footer,section{
+footer,section{
     padding: 3%;
     margin-bottom: 0;
+}
+header{
+    /* position: fixed;
+    box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
 }
 body{
     display: flex;
@@ -31,12 +54,18 @@ hr {
     margin: 0;
     padding: 0;
 }
-.header{
+.header_cont{
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: var(--dark_blue);
+    padding: 0 20px 0 20px ;
     height: 70px;
+}
+
+.name{
+    padding: 0;
+    margin-left: auto;
 }
 
 img{
@@ -53,6 +82,7 @@ img:hover{
     cursor: pointer;
 }
 .main{
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +96,7 @@ img:hover{
 footer{
     display: flex;
     flex-direction: row;
+    
     background-color: var(--dark_blue);
     height: 100px;
     margin-top: 500px;
@@ -77,8 +108,9 @@ footer{
     padding: 5rem;
     display: grid;
     grid-template-columns: repeat(3,1fr) ;
-    row-gap: 25px;
-    column-gap: 25px;
+    margin-top: 0;
+    row-gap: 45px;
+    column-gap: 35px;
 }
 .rect{
     display: flex;
@@ -88,9 +120,7 @@ footer{
     gap: 2rem;
     height: 200px;
     margin: 10px;
-    margin-top: 100px;
-    padding: 10px;
-    --g: 4px;
+    --g: 10px;
     --b: 5px;
     --c: #263238;
     padding: calc(var(--g) + var(--b));
@@ -131,10 +161,7 @@ footer{
     margin-bottom: 0px;
     padding: 15px;
 }
-#results{
-    color: #23364D;
-    font-size: 5rem;
-}
+
 .search-cont{
     position: relative;
     display: flex;
@@ -194,4 +221,15 @@ button{
         border: 0;
         cursor: text;
     }
+}
+#results{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    color: #23364D;
+    font-size: 5rem;
+    padding: 100px;
+}
+.result_card{
+    
+    text-align: center;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,10 @@
 </head>
 <body>
     <header class="header">
-        <img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
-        <h1 class="name">Computer-Science Compass</h1>
+        <div class="header_cont">
+            <img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
+            <h1 class="name">Computer-Science Compass</h1>
+        </div>
     </header>
     <main>
         <div class="top">
@@ -18,18 +20,41 @@
             <h1 class="title">ESI</h1>
         </div>
         <div class="container">
-            <h2 class="sub_ttl">
+            <div id="cont_list" class="cont_list">
+                <div class="ham_cont">
+                    <div class="lin"></div>
+                    <div class="lin"></div>
+                    <div class="lin"></div>
+                </div>
+                <button id="toggleTableBtn" onclick="toggleTable()">Show</button>
+                <div class="floating-stack" id="floating-stack">
+                    <ol class="list">
+                        <li><a href="#pres">Presentation</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#filieres">Filieres</a>
+                            <ol>
+                                <li><a href="#isitd">ISITD</a></li>
+                                <li><a href="#icsd">ICSD</a></li>
+                                <li><a href="#iin">IIN</a></li>
+                                <li><a href="#issic">ISSIC</a></li>
+                            </ol>
+                        </li>
+                        <li><a href="#fichiers">Fichiers</a></li>
+                    </ol>
+                </div>
+            </div>
+            <h2 class="sub_ttl" id="pres">
                 Presentation :
             </h2>
             <hr>
             <p>
                 L'École des Sciences de l'Information (ESI) à Rabat, au Maroc, est une grande école publique d'ingénieurs, relevant du Haut-Commissariat au Plan (HCP). Classée parmi les établissements scientifiques et techniques, elle est regroupée avec d'autres instituts dans le pôle "Sciences et Technologie de l'Information et de la Communication".
             </p>
-            <h2 class="sub_ttl">
+            <h2 class="sub_ttl" id="location">
                 Location :
             </h2>
             <img src="../Assets/schools/ESI/location.png" alt="" class="loc">
-            <h2 class="sub_ttl">Filieres :</h2>
+            <h2 class="sub_ttl" id="filieres">Filieres :</h2>
             <div class="grid_fil">
                 <div class="card">
                     <div class="face face1">
@@ -88,18 +113,105 @@
                     </div>
                 </div>
             </div>
+            <h2 class="sub_ttl" id="TC">
+                Tronc Commun :
+            </h2>
+            <h3 class="sub_ttl3">Architecture des ordinateurs, systèmes d’exploitation :</h3>
+            <p>
+                Algèbre de Boole, cpu synchronisation, msdos, linux Bash
+            </p>
+            <h3 class="sub_ttl3">Algorithmique & Programmation :</h3>
+            <p>
+                pour (ISITD, IIN) C, POUR (ICSD, ISSIC) Python
+                Projet conception d'une jeu en utilisant C pour (ISITD, IIN).
+            </p>
+            <h3 class="sub_ttl3">Réseau informatique, réseaux mobiles</h3>
+            <img src="../tom.jpg" alt="" class="meme" style="width: 400px; height: auto; align-self: center;">
+            <h3 class="sub_ttl3">Gestion électronique des documents, XML :</h3>
+            <p>
+                GED
+            </p>
+            <h3 class="sub_ttl3">Optimisation , graphes : </h3>
+            <p>
+                something
+            </p>
+            <h3 class="sub_ttl3">Algorithmique avancée : </h3>
+            <p>
+                Data structures
+            </p>
+            <h3 class="sub_ttl3">AProgrammation PHP, technologies web : </h3>
+            <p>
+                HTML, CSS, JS, PHP.
+            </p>
+            <h3 class="sub_ttl3">Programmation system:</h3>
+            <p>
+                for ISITD, IIN;
+                C in linux
+                most interesting module this year
+            </p>
+            <h3 class="sub_ttl3">E-services, ECM (Enterprise Content Management) : </h3>
+            <p>
+                Interesting stuff i guess
+            </p>
+            <h3 class="sub_ttl3">Mathématiques :</h3>
+            <p>
+                Algebre & Analyse
+            </p>
+            <h3 class="sub_ttl3">Économie générale, micro et macroéconomie : :</h3>
+            <p>
+                Eco
+            </p>
+            <h3 class="sub_ttl3">Management & marketing, comptabilité :  :</h3>
+            <p>
+                Another eco
+            </p>
+            <h3 class="sub_ttl3">Anglais, techniques de communication : :</h3>
+            <p>
+                ......
+            </p>
+            <h2 class="sub_ttl" id="charts">
+                Interesting graphes & charts :
+            </h2>
+            <img src="../graph.jpg" alt="" class="grph" style="align-self: center; width: 500px;">
             <h3 class="sub_ttl2" id="isitd">
                 ISITD
             </h3>
             <p>
-                L'École des Sciences de l'Information (ESI) à Rabat, au Maroc, est une grande école publique d'ingénieurs, relevant du Haut-Commissariat au Plan (HCP). Classée parmi les établissements scientifiques et techniques, elle est regroupée avec d'autres instituts dans le pôle "Sciences et Technologie de l'Information et de la Communication".
+                La filière ISITD se concentre sur la conception, le développement et la gestion des systèmes d'information. Les étudiants apprennent à concevoir des solutions informatiques efficaces pour répondre aux besoins des entreprises et des organisations. Cette filière couvre un large éventail de sujets, y compris les bases de données, le développement web, les technologies de l'information, et la gestion de projets informatiques.
             </p>
+            <h3 class="sub_ttl2" id="iin">
+                IIN
+            </h3>
+            <p>
+                se concentre sur la manipulation, la transmission, et la gestion de l'information sous forme numérique. Les étudiants de cette filière acquièrent des compétences spécialisées dans le traitement des données numériques, la conception de systèmes d'information avancés, et la gestion des technologies de l'information.
+            </p>
+            <h3 class="sub_ttl2" id="icsd">
+                ICSD
+            </h3>
+            <p>
+                est une discipline qui combine la conception de systèmes intelligents avec l'analyse de données avancée. Les étudiants apprennent à exploiter les connaissances et les données pour résoudre des problèmes complexes dans des domaines tels que l'intelligence artificielle, l'apprentissage automatique, l'extraction de connaissances, et la fouille de données.
+            </p>
+            <h3 class="sub_ttl2" id="issic">
+                ISSIC
+            </h3>
+            <p>
+                est axée sur la protection des systèmes d'information contre les cybermenaces et les attaques informatiques. Les étudiants apprennent à concevoir, mettre en œuvre et gérer des stratégies de sécurité informatique robustes pour prévenir les cyberattaques, détecter les intrusions et réagir efficacement aux incidents de sécurité.
+            </p>
+            <h2 class="sub_ttl">Fichiers :</h2>
+            <h3 class="sub_ttl2" id="issic">
+                Reglement
+            </h3>
+            <object type="application/pdf"
+            data="../reglement.pdf"
+            width="500px"
+            height="500px"
+            style="align-self: center;"></object>
         </div>
     </main>
     <footer class="footer">
         <img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
-        <h1 class="sub">All rights reserved</h1>
+        <h1 class="rights">All rights reserved</h1>
     </footer>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

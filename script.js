@@ -7,7 +7,7 @@ function search() {
     let results = document.getElementById("results");
     results.innerHTML = "";
 
-    var pages = ['faq.html', 'schools.html', 'guides.html', 'ressources.html','esi.html'];
+    var pages = ['faq.html', 'schools.html', 'guides.html', 'ressources.html','esi.html','insea.html'];
 
     Promise.all(pages.map(page => fetch('pages/' + page).then(response => response.text())))
         .then(contents => {
@@ -20,12 +20,14 @@ function search() {
                     if (match.textContent.toLowerCase().includes(word)) {
                         flag = true;
                         var result = document.createElement("div");
+                        result.className = "result_card";
+                        document.getElementById("results").appendChild(result);
                         var link = document.createElement("a");
                         link.href = 'pages/' + pages[index];
                         link.textContent = 'Found on ' + pages[index];
                         result.appendChild(link);
                         results.appendChild(result);
-                        results.appendChild(document.createElement("hr"));
+                        //results.appendChild(document.createElement("hr"));
                     }
                 });
             });
@@ -35,4 +37,14 @@ function search() {
             }
         })
         .catch(error => console.error('Error fetching pages:', error));
+}
+function toggleTable() {
+    var floatingStack = document.getElementById("floating-stack");
+    floatingStack.classList.toggle("active");
+    var bttn = document.getElementById("toggleTableBtn");
+    if (floatingStack.classList.contains("active")) {
+        bttn.textContent = "Hide";
+    } else {
+        bttn.textContent = "Show";
+    }
 }
