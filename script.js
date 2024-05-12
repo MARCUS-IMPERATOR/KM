@@ -48,3 +48,22 @@ function toggleTable() {
         bttn.textContent = "Show";
     }
 }
+window.onscroll = function() {scrolling()};
+
+function scrolling() {
+  var scrllbttn = document.getElementById("top");
+  if (document.documentElement.scrollTop > 20) {
+    scrllbttn.style.display = "block";
+  } 
+  else {
+    scrllbttn.style.display = "none";
+  }
+}
+
+function scrollToTop() {
+  document.documentElement.style.scrollBehavior = 'smooth';
+  document.documentElement.scrollTop = 0;
+  setTimeout(function() {
+    document.documentElement.style.scrollBehavior = 'auto';
+  }, 800);
+}

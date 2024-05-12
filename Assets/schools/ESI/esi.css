@@ -177,7 +177,6 @@ p{
     font-size: 3rem;
     margin: 0;
     color: #344863;
-    text-indent: 50px;
     scroll-margin-top : 2.5em;
 }
 .floating-stack {
@@ -305,4 +304,57 @@ ol a:hover::before {
     margin: 0;
     color: #344863;
     font-weight: bolder;
+}
+.sub_ttl4{
+    font-size: 1.8rem;
+    margin: 0;
+    text-indent: 50px;
+    text-decoration: underline;
+    color: #344863;
+    font-weight: bolder;
+}
+.bttn_top{
+    all: unset;
+    position: fixed;
+    bottom: 50px;
+    right: 50px; 
+    z-index: 999;
+    color:white;
+	padding-top:1.8em;
+    align-content: center;
+    justify-content: center;
+	text-decoration:none;
+    scroll-behavior: smooth;
+	transition:all .3s ease-out;
+}
+.bttn_top:before {
+    content: '▲';
+    font-size: 2rem;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    top: 0;
+    left: 50%;
+    margin-left: -0.75em; 
+    width: 2.5em; 
+    height: 2.5em; 
+    line-height: 2.5em; 
+    scroll-behavior: smooth;
+    transition: transform 0.5s ease-in;
+    border-radius: 50%;
+    background-color: var(--dark_blue);
+}
+
+.bttn_top:hover{
+	color:white;
+
+
+}
+.bttn_top:hover:before{
+    color: var(--dark_blue);
+    background-color: white;
+    border: 3px solid var(--dark_blue);
+	transform: rotate(360deg);
 }
