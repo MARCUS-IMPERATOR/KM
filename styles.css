@@ -38,6 +38,7 @@ header{
 body{
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     background-color: var(--Light_grayish_blue);
     padding: 0;
     margin: 0;
@@ -71,7 +72,6 @@ hr {
 img{
     width: 70px;
     height: 70px;
-    border-radius: 50%;
 }
 .logo{
     width: 40px;
@@ -90,7 +90,8 @@ img:hover{
     gap: 0;
     padding: 0;
     background-color: var(--dark_blue);
-    height: 400px;
+    min-height: 1700px;
+    flex-grow: 1;
     text-align: center;
 }
 footer{
@@ -98,8 +99,8 @@ footer{
     flex-direction: row;
     
     background-color: var(--dark_blue);
-    height: 100px;
-    margin-top: 500px;
+    height: 30px;
+    margin-top: 400px;
 }
 .rights{
     margin-left: auto;

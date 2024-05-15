@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer-Science Compass</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="ensmr.css">
+</head>
+<body>
+    <header class="header">
+            <!--<img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >-->
+        <!--<h1 class="name">Computer-Science Compass</h1>-->
+        <ul class="bar">
+            <li><a href="#acceuil">Acceuil</a></li>
+            <li><a href="#filieres">Filières</a></li>
+            <li><a href="#comites">Comités&Clubs</a></li>
+            <li><a href="#DD">DD&Echange</a></li>
+            <li><a href="#compus">Compus</a></li>
+            <li><a href="../schools.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="banner" id="acceuil">
+            <script type="text/javascript">
+                window.addEventListener("scroll", function() {
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                    var navLinks = document.querySelectorAll("header ul li a");
+                    navLinks.forEach(function(link) {
+                    link.classList.toggle("sticky", window.scrollY > 0);
+                    });
+                });
+            </script>
+            <div class="top">
+                <h1 class="title">ENSMR</h1>
+            </div>
+            <div class="acceuil">
+                <div class="box-presentation">
+                    <h2 class="sub_ttl1">
+                        Presentation :
+                    </h2>
+                    <p >
+                        Fondée en 1972, L'Ecole Nationale Supérieure des Mines de Rabat (Ex ENIM) est érigée en établissementpublic doté de la personnalité morale et de l'autonomie financière depuis 1982. Elle est placée sous la tutelle de l'autorité gouvernementale chargée des mines. L'Ecole dispense des formations et des enseignements organisés en cycles, filières et modules et sanctionnés par des diplômes nationaux.
+                    </p>
+                </div>
+
+                <div class="box-localisation">
+                    <h2 class="sub_ttl1">
+                        Localisation :
+                    </h2>
+                    <div class="location">
+                        <a href="https://maps.app.goo.gl/dCmzhhxR7xhV8Atc7" target="_blank">
+                            <img src="../../Assets/schools/ENSMR/localisation_ensmr.png" class="location-img" >
+                        </a>
+                    </div>
+                    
+                </div>
+                    
+                
+            </div>
+        </section>
+        <div class="container">
+            <!-- FILIERES -->
+            <h2 class="sub_ttl" id="filieres">Filieres :</h2>
+            <!-- <div class="grid_fil">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/isitd.svg">
+                            <h3>ISITD</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie des Systèmes d'Information et de la Transformation Digitale</p>
+                                <a href="#isitd">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/icsd.svg">
+                            <h3>ICSD</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie des Connaissances et Science des Données</p>
+                                <a href="#">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/iin.svg">
+                            <h3>IIN</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie de l'Information Numérique</p>
+                                <a href="#">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/issic.svg">
+                            <h3>ISSIC</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie de la Sécurité des Systèmes d’Information et Cyberdéfense</p>
+                                <a href="#">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="GI">
+                <div class="wrap-collabsible">
+                    <input id="collapsible1" class="toggle" type="checkbox">
+                    <label for="collapsible1" class="lbl-toggle" style="font-size: 3.5rem; color: rgb(99, 127, 230,0.8);">GI: Genie Informatique:</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner" class="intro">
+                            <!-- <p>
+                        La filière Data and Software Engineering de l'INSEA forme des ingénieurs polyvalents, prêts pour les défis de l'ingénierie des données et du développement logiciel. 
+                        <br><br>
+                        Elle offre une formation complète couvrant les bases de l'ingénierie informatique, l'ingénierie des données et le génie logiciel, ainsi que des compétences en mathématiques et communication. 
+                        <br><br>
+                        Les étudiants acquièrent une expertise dans les technologies Big Data, les méthodes d'apprentissage automatique et les architectures logicielles avancées, tout en adoptant des pratiques agiles et en garantissant la qualité des logiciels.
+                            </p> -->
+                            <p>
+                                La formation Génie Informatique a pour objectif de former des Ingénieurs d'État informaticiens capables de comprendre et d'anticiper l'évolution des technologies de l'information afin qu'ils soient acteurs de la révolution technologique en cours et d'exercer dans différents domaines des technologies de l'information et de la communication.
+                                <br> 
+                                Les ingénieurs ainsi formés sont dotés de solides bases méthodologiques et techniques leur permettant de développer un ensemble de compétences qui suivent l'évolution de la technologie et du monde socioéconomique, exploitables selon les exigences du marché de l'emploi.
+                                <br>
+                                Le cursus proposé facilite leur insertion dans le milieu professionnel et leur offre la meilleure évolution de carrière possible.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="collapsible2" class="toggle" type="checkbox">
+                    <label for="collapsible2" class="lbl-toggle" style="font-size: 3.5rem; margin: 0; color: rgb(99, 127, 230,0.8);">DÉBOUCHÉS:</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner" class="intro">
+                            <p>
+                                Les diplômés de la formation ont accès à divers débouchés professionnels, tels que:
+                                <br>
+                                    <ul class="deb">
+                                        <li>Ingénieur Logiciel</li>
+                                        <li>Ingénieur Data</li>
+                                        <li>Ingénieur Digitalisation des Processus</li>
+                                        <li>Ingénieur Sécurité́</li>
+                                        <li>Responsable Système d'Information</li>
+                                        <li>Manager de Projets SI</li>
+                                        <li>Conseiller en TIC auprès des directions générales</li>
+                                        <li>Consultant en gouvernance des SI, en conduite de changement dans les organisations</li>
+                                        <li>Assistant à la maitrise d'ouvrage ou à la maitrise d'œuvre</li>
+                                        <li>Manager de l'innovation</li>
+                                    </ul>
+                            </p>
+                      </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="wrap-collabsible">
+                        <input id="collapsible3" class="toggle" type="checkbox">
+                        <label for="collapsible3" class="lbl-toggle" style="font-size: 3.5rem; margin: 0; color: rgb(99, 127, 230,0.8);">PROGRAMME:</label>
+                        <div class="collapsible-content">
+                            <div class="content-inner" class="intro">
+                                <p>
+                                    <ul class="acc">
+                                        <li>
+                                            <input type="radio" name="acc" id="first">
+                                            <label for="first"><b>SEMESTRE 1</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>ALGORITHMIQUE ET PROGRAMMATION</li>
+                                                    <ul>
+                                                        <li>MATHEMATIQUE</li>
+                                                        <li>ALGORITHMIQUE</li>
+                                                    </ul>
+                                                    <li>ARCHITECTURE DES ORDINATEURS</li>
+                                                    <ul>
+                                                        <li>ELECTRONIQUE</li>
+                                                        <li>AUTOMATIQUE</li>
+                                                        <li>INSTRUMENTTATION ET METEROLOGIE</li>
+                                                    </ul>
+                                                    <li>ANALYSE ET CONCEPTION RELATIONNELLES & BASES DE DONNÉES</li>
+                                                    <ul>
+                                                        <li>TECHNOLOGIE</li>
+                                                        <li>DESSIN INDUSTRIEL</li>
+                                                    </ul>
+                                                    <li>ANALYSE DE DONNÉES ET PROGRAMMATION AVEC SAS</li>
+                                                    <ul>
+                                                        <li>MECANIQUE DES FLUIDES</li>
+                                                        <li>MECANIQUE DES MILIEUX CONTINUES</li>
+                                                    </ul>
+                                                    <li>PROBABILITÉS ET INFÉRENCE STATISTIQUE</li>
+                                                    <ul>
+                                                        <li>ANALYSE NUMERIQUE</li>
+                                                        <li>LANGAGE C</li>
+                                                    </ul>
+                                                    <li>PROGRAMMATION LINÉAIRE ET ANALYSE NUMÉRIQUE</li>
+                                                    <ul>
+                                                        <li>ECONOMIE DE L'ENTREPRISE</li>
+                                                        <li>MANAGEMENT</li>
+                                                    </ul>
+                                                    <li>PRINCIPES DE L'ÉCONOMIE ET HISTOIRE DE LA PENSÉE ÉCONOMIQUE</li>
+                                                    <ul>
+                                                        <li>ANGLAIS</li>
+                                                        <li>TECHNIQUE D'EXPRESSION</li>
+                                                    </ul>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="second">
+                                            <label for="second"><b>SEMESTRE 2</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>STRUCTURES DE DONNÉES ET PROGRAMMATION AVANCÉE</li>
+                                                    <ul>
+                                                        <li>THEORIE D'ECHANTILLAGE</li>
+                                                        <li>STATISTIQUE INFERENTIELLE</li>
+                                                    </ul>
+                                                    <li>PROGRAMMATION ORIENTÉE OBJET</li>
+                                                    <ul>
+                                                        <li>AUTOMATIQUE</li>
+                                                        <li>ELECTRONIQUE</li>
+                                                    </ul>
+                                                    <li>DÉVELOPPEMENT WEB</li>
+                                                    <ul>
+                                                        <li>BASE DE DONNÉES RELATIONNELLES</li>
+                                                        <li>RESEAUX INFORMATIQUE</li>
+                                                    </ul>
+                                                    <li>SYSTÈMES D'EXPLOITATION</li>
+                                                    <ul>
+                                                        <li>TRANSFERTS THERMIQUE</li>
+                                                        <li>THERMODYNAMIQUE APPLIQUEE</li>
+                                                    </ul>
+                                                    <li>RÉGRESSION LINÉAIRE ET SÉRIES CHRONOLOGIQUES</li>
+                                                    <ul>
+                                                        <li>UML</li>
+                                                        <li>LANGAGE C++</li>
+                                                        <li>STRUCTURES DE DONNEES</li>
+                                                    </ul>
+                                                    <li>ANALYSE ÉCONOMIQUE ET COMPTABILITÉ NATIONALE</li>
+                                                    <ul>
+                                                        <li>METHODES NUMERIQUES</li>
+                                                    </ul>
+                                                    <li>ENTREPRENARIAT</li>
+                                                    <ul>
+                                                        <li>COMPTABILITE</li>
+                                                        <li>FINANCES</li>
+                                                    </ul>
+                                                    <li>SCIENCES SOCIALES, COMMUNICATION AND BUSINESS ENGLISH 2</li>
+                                                    <ul>
+                                                        <li>ANGLAIS</li>
+                                                        <li>TECHNIQUES D'EXPRESSION</li>
+                                                    </ul>
+                                                </ul>        
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="third">
+                                            <label for="third"><b>SEMESTRE 3</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>MODÉLISATION ORIENTÉE OBJET DES SI</li>
+                                                    <li>RÉSEAUX INFORMATIQUES</li>
+                                                    <li>PROGRAMMATION ORIENTÉE OBJET AVANCÉE</li>
+                                                    <li>COMPILATION ET INFORMATIQUE THÉORIQUE</li>
+                                                    <li>BASES DE DONNÉES AVANCÉES</li>
+                                                    <li>THÉORIE DES GRAPHES ET MODÈLES DISCRETS</li>
+                                                    <li>ENTREPRENARIAT II</li>
+                                                    <li>SCIENCES SOCIALES, COMMUNICATION AND BUSINESS ENGLISH 3</li>
+                                                </ul>  
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="fourth">
+                                            <label for="fourth"><b>SEMESTRE 4</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>BUSINESS INTELLIGENCE & KNOWLEDGE DISCOVERY</li>
+                                                    <li>IOT & CLOUD COMPUTING</li>
+                                                    <li>GÉNIE LOGICIEL ET PROJET</li>
+                                                    <li>ARCHITECTURE TCP/IP ET ADMINISTRATION</li>
+                                                    <li>INTELLIGENCE ARTIFICIELLE</li>
+                                                    <li>NOUVELLES TECHNOLOGIES DE DÉVELOPPEMENT</li>
+                                                    <li>ENTREPRENEURIAT III</li>
+                                                    <li>SCIENCES SOCIALES, COMMUNICATION AND BUSINESS ENGLISH 4</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="fifth">
+                                            <label for="fifth"><b>SEMESTRE 5</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>SÉCURITÉ INFORMATIQUE</li>
+                                                    <li>USINE LOGICIELLE</li>
+                                                    <li>BPM & MICROSERVICES</li>
+                                                    <li>ARCHITECTURES DES SI</li>
+                                                    <li>BIG DATA</li>
+                                                    <li>MACHINE & DEEP LEARNING</li>
+                                                    <li>PROJET D'OUVERTURE ET D'INNOVATION</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="sixth">
+                                            <label for="sixth"><b>SEMESTRE 6</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>PROJET DE FIN D'ETUDE (PFE)</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- DD&ECHANGE -->
+            <div>
+                <h2 id="DD" class="sub_ttl" style="margin-bottom: 39px;">DD & Echange :</h2> 
+                <div class="Fichier-DD">
+                    <object type="application/pdf"
+                    data="../../Assets/schools/ENSMR/Infographie-_Echange-DD-_2024.pdf"
+                    width="450px"
+                    height="410px"
+                    style="align-self: left; margin-right: 14px;"></object>
+                </div>
+                <div style="margin-top: 40px;">
+                    <table class="styled-table" style="margin-left: 110px;margin-top: 0; 
+                    width: 1200px; height: 470px; 
+                    font-size: 15px;">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th style="border-top: 0; border-left: 0; background-color: white;"></th>
+                                <th>
+                                    Départements et Spécialités
+                                    <br>Disponibles :<br>
+                                </th>
+                                <th>Processus d'échange/double <br>
+                                diplomation</th>
+                            </tr>
+                        </thead>
+                        <td>Row 3</td>
+                        <td style="background-color: rgb(99, 127, 230);"><b>INSA</td></b>
+                        <td>
+                            Informatique et Technologies de
+                            <br>l'Information (ITI)
+                        </td>
+                        <td style="text-align: left;">1ère étape: Pré-sélection par INSEA (14 étudiants présélectionnés) Elle
+                            se fait selon la pondération suivante : (S1+2S2+3S3)/6 puis un
+                            classement entre les filières , il n'y a pas un nombre précis pour chaque
+                            filière. Les moyennes sont calculées AVANT RATTRAPAGE !
+                            <br>
+                            PS : les 3 filières (AF-SE-DS) sont confondues « mélangées », après ils
+                            font un classement (le classement ne se fait pas au sein de chaque
+                            filière indépendamment ,mais entre les 3)
+                            <br>
+                            2ème étape : Étude du dossier, par les deux écoles ENSAE ENSAI,
+                            qui comporte :
+                            <br>
+                            ⮚ CV
+                            <br>
+                            ⮚ Lettre de motivation (faut indiquer la ou les écoles souhaitées,
+                            l'ordre de préférence ainsi que votre projet professionnel)
+                            <br>
+                            ⮚ Bulletins depuis le baccalauréat
+                            Après 2 jours seulement de votre soumission de dossier, vous recevez
+                            une réponse si vous êtes admissible
+                            <br>
+                            3ème étape : Entretien après admissibilité : ( 8 étudiants admissibles)
+                            Entretien , durée 20 min :10 min pour vous présenter et 10 min où vous
+                            allez répondre aux questions ( qui diffèrent d'un candidat à un
+                            autre,cela dépend de votre motivation et votre projet professionnel , de
+                            vos notes etc...)PS : une partie de l'entretien est en anglais puisque
+                            certains cours à l'ENSAE-ENSAI sont dispensés en anglais !
+                            <br>
+                            4ème étape : Admission ( 5 admis : 2 ENSAE; 3 ENSAI)
+                        </td>
+                        <tr>
+                            <td>Row 3</td>
+                            <td  style="background-color: rgb(99, 127, 230);">
+                                <b>
+                                    ULAVAL
+                                    <br>Faculté des 
+                                    <br>Sciences 
+                                    <br>et Génie
+                                </b>
+                            </td>
+                            <td>2DS et 2 DSE : programme Informatique</td>
+                            <td style="text-align: left;">Remplissage d'un formulaire + sélection par l'INSEA :
+                                <br>
+                                Elle se fait selon la pondération suivante : 
+                                <br>
+                                <b>(S1+2S2+3S3)/6</b> puis un classement dans chaque filière indépendamment!
+                                Les moyennes sont calculées <b>AVANT RATTRAPAGE !</b>
+                                <br>
+                                Pas d'entretien, une fois admissible c'est-à-dire sélectionné par l'INSEA , il suffit de remplir un
+                                formulaire (détails dans l'email que vous recevrez) et obtenir la lettre d'admission afin
+                                d'entamer la procédure d'immigration.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+         
+            <!-- COMITES&CLUBS -->
+            <h2 class="sub_ttl" id="comites">Comités&Clubs :</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="../../Assets/schools/ENSMR/logo-forum.png" alt="">
+                    <div class="card-content">
+                        <h3>Comité FORUM</h3>
+                        <p>
+                            Le Forum Mines-Rabat Entreprises sert plusieurs finalités. Il constitue d'abord la plateforme de rencontre entre les futurs ingénieurs et les entreprises, et permet ainsi aux premiers de découvrir une facette du monde professionnel, et aux seconds d'avoir une idée sur les différents profils. Il représente aussi un portail d'idées et de pensées émergentes, et ce à travers une conférence riche d'échange et de colloque. Épanouissement, découverte, expérience et enrichissement, voici ce que notre Forum cherche à atteindre.
+                        </p>
+                        <button href="" class="btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../../Assets/schools/ENSMR/comite-masjid.jpeg" alt="">
+                    <div class="card-content">
+                        <h3>Comité MASJID</h3>
+                        <p>
+                            Le comité vise à contribuer à la formation d'un ingénieur messager, à développer ses capacités dans divers domaines, à savoirs les domaines cognitif et professionnel et en fin de compte à la diplômation d'un ingénieur responsable qui s'implique dans la société.
+                        </p>
+                        <button href="" class="btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../../Assets/schools/ENSMR/logo-culturl.jpeg" alt="">
+                    <div class="card-content">
+                        <h3>Comité CULTUREL </h3>
+                        <p>
+                            Le comité culturel de l'école nationale supérieure des mines de RABAT a été créé en 2005. Il a pour finalité l'épanouissement culturel et l'intégration de la dimension culturelle dans le quotidien des étudiants, et ce, à travers divers évènements et manifestations d'ordre culturel et artistique.
+                            Le comité culturel est un espace où les goûts et les penchants se concilient dans le dessein de renforcer l'identité marocaine et de s'ouvrir sur le monde. Il aspire à faire sortir l'élève ingénieur de sa sphère technique et à former des ingénieurs agiles capables d'intégrer facilement le marché professionnel.
+                        </p>
+                        <button href="" class="btn">Read more</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../../Assets/schools/ENSMR/logo-formation.png" alt="">
+                    <div class="card-content">
+                        <h3>Comité Formation</h3>
+                        <p>
+                            Le comité Formation a comme rôle principal de soutenir l'élève Enimiste dans sa formation d'ingénieur, comme rôle secondaire ; le comité représente l'école des Mines dans les différents forums et caravane d'orientation, en gros tout ce qui est réputation de l'école. Le comité veille également à assurer des formations (Communication, langue, logiciel, coaching...) pour nos étudiants afin qu'ils puissent compléter leur formation en tant qu'ingénieur polyvalent.
+                        </p>
+                        <a href="" class="btn">Read more</a>
+                    </div>
+                </div>
+ 
+            </div>
+            <!-- CAMPUS -->
+            <h2 id="compus" class="sub_ttl">Compus :</h2>
+            <div class="boody">
+                <div class="containerr">
+                    <div class="sliderWrap">
+                        <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+                        <ul class="imgList">
+                            <img src="../../Assets/schools/ENSMR/enim-night.jpg" alt="im1" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/internat.jpg" alt="im2" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/internat-cote.jpg" alt="im3" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/jardin-2.jpg" alt="im4" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/jardin-3.jpg" alt="im5" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/resto2.jpg" alt="im6" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/terasse.jpg" alt="im7" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/plat-terasse.jpg" alt="im8" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/gym.jpg" alt="img9" class="imgItem">
+                            <img src="../../Assets/schools/ENSMR/terrain.jpg" alt="im10" class="imgItem">
+                            <!-- <img src="../../Assets/schools/ENSMR/gym.jpg" alt="im11" class="imgItem"> -->
+                        </ul>
+                        <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+                    </div>
+                    <div class="sliderScrol">
+                        <div class="scrolTrack">
+                            <div class="scrolThumb"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="logo-container">
+            <img src="../../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
+            <h1 class="sub">All rights reserved</h1>
+        </div>
+        
+        <div class="icons-school">
+            <a href="https://www.enim.ac.ma/" target="_blank"><i class="fa-solid fa-link" style="color: white;"></i></a>
+            <a href="https://www.linkedin.com/company/ensmr/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: white;"></i></a>
+            <a href="https://www.instagram.com/ensmr_rabat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+        </div>
+    </footer>
+    <script src="../../script.js"></script>
+    <script src="ensmr.js"></script>
+</body>
+</html>
