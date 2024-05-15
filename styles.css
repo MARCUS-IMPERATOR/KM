@@ -104,8 +104,8 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--dark_blue);
-    height: 30px;
-    margin-top: 400px;
+    height: 60px;
+    margin-top: 500px;
 }
 .rights{
     margin-left: auto;
