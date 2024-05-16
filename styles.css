@@ -95,7 +95,7 @@ img:hover{
     gap: 0;
     padding: 0;
     background-color: var(--dark_blue);
-    min-height: 1700px;
+    min-height: 480px;
     flex-grow: 1;
     text-align: center;
 }
