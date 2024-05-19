@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer-Science Compass</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../Assets/schools/EIA/eia.css">
+</head>
+<body>
+    <header class="header">
+            <!--<img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >-->
+        <!--<h1 class="name">Computer-Science Compass</h1>-->
+        <ul class="bar">
+            <li><a href="#acceuil">Acceuil</a></li>
+            <li><a href="#filieres">Filières</a></li>
+            <li><a href="#comites">Comités&Clubs</a></li>
+            <li><a href="#DD">DD&Echange</a></li>
+            <li><a href="#compus">Compus</a></li>
+            <li><a href="schools.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+            <li>
+                <div class="header_cont" style="background-color:rgba(255, 255, 255, 0) ;">
+                    <a href="../KM_Log/Signin.html"><button id="login_btn">Log In</button></a> 
+                    <a href="../KM_Log/Signup.html"><button id="logup_btn">Sign Up</button></a> 
+                     <span id="username"></span>
+                     <button href="#" id="logout_btn" >Log Out</button>
+                 </div>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="banner" id="acceuil">
+            <script type="text/javascript">
+                window.addEventListener("scroll", function() {
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky", window.scrollY > 0);
+                    var navLinks = document.querySelectorAll("header ul li a");
+                    navLinks.forEach(function(link) {
+                    link.classList.toggle("sticky", window.scrollY > 0);
+                    });
+                });
+            </script>
+            <div class="top">
+                <h1 class="title">EIA</h1>
+            </div>
+            <div class="acceuil">
+                <div class="box-presentation">
+                    <h2 class="sub_ttl1">
+                        Presentation :
+                    </h2>
+                        <p >
+                            L’École d’Ingénieurs Abulcasis (EIA) est une composante de l’Université Internationale Abulcasis des Sciences de la Santé(UIASS),L’EIA a pour objectif de former des experts marocains et africains de l’ingénierie informatique. Elle s’appuie pour cela sur les compétences de ses laboratoires qui relient de manière unique au Maroc l’état de l’art de disciplines des sciences dures et des sciences techniques et numériques liées aux enjeux socio-économiques actuels. 
+                        </p>
+                </div>
+
+                <div class="box-localisation">
+                    <h2 class="sub_ttl1">
+                        Localisation :
+                    </h2>
+                    <div class="location">
+                        <a href="https://www.google.com/maps/place/Ecole+D'ing%C3%A9nieur+Abulcasis+-+EIA,+Rabat/@33.9779552,-6.8716384,16.67z/data=!4m14!1m7!3m6!1s0xda76d6f46b566e7:0x642615aa4499016!2sEcole+D'ing%C3%A9nieur+Abulcasis+-+EIA,+Rabat!8m2!3d33.978204!4d-6.871972!16s%2Fg%2F11s1w4mw05!3m5!1s0xda76d6f46b566e7:0x642615aa4499016!8m2!3d33.978204!4d-6.871972!16s%2Fg%2F11s1w4mw05?entry=ttu" target="_blank">
+                            <img src="../Assets/schools/EIA/images/location.png" class="location-img" >
+                        </a>
+                    </div>
+                </div>
+                    
+                
+            </div>
+        </section>
+        <div class="container">
+            <!-- FILIERES -->
+            <h2 class="sub_ttl" id="filieres">Filieres :</h2>
+            <!-- <div class="grid_fil">
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/isitd.svg">
+                            <h3>ISITD</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie des Systèmes d'Information et de la Transformation Digitale</p>
+                                <a href="#isitd">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/icsd.svg">
+                            <h3>ICSD</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie des Connaissances et Science des Données</p>
+                                <a href="#">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/iin.svg">
+                            <h3>IIN</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie de l'Information Numérique</p>
+                                <a href="#">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="face face1">
+                        <div class="content">
+                            <img src="../../Assets/schools/ESI/issic.svg">
+                            <h3>ISSIC</h3>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p>Ingénierie de la Sécurité des Systèmes d’Information et Cyberdéfense</p>
+                                <a href="#">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="GI">
+                <div class="wrap-collabsible">
+                    <input id="collapsible1" class="toggle" type="checkbox">
+                    <label for="collapsible1" class="lbl-toggle" style="font-size: 3.5rem; color: rgb(99, 127, 230,0.8);">GI: Genie Informatique:</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner" class="intro">
+                            <!-- <p>
+                        La filière Data and Software Engineering de l'INSEA forme des ingénieurs polyvalents, prêts pour les défis de l'ingénierie des données et du développement logiciel. 
+                        <br><br>
+                        Elle offre une formation complète couvrant les bases de l'ingénierie informatique, l'ingénierie des données et le génie logiciel, ainsi que des compétences en mathématiques et communication. 
+                        <br><br>
+                        Les étudiants acquièrent une expertise dans les technologies Big Data, les méthodes d'apprentissage automatique et les architectures logicielles avancées, tout en adoptant des pratiques agiles et en garantissant la qualité des logiciels.
+                            </p> -->
+                            <p>
+                                    L’EIA a pour objectif de former des experts marocains et africains de l’ingénierie informatique
+                                    La formation à l’EIA est orientée vers la professionnalisation rapide et agile de l’étudiant en assurant :
+                                <br> 
+                                    •	Le dynamisme des enseignements proposés avec 50% de cours et 50% de suivi de projets ;  
+                                <br>•	L’intégration de modules majeurs et mineurs visant à former un ingénieur d’Etat accompli étant à même de comprendre les contraintes de son environnement ;
+                                <br>•	Des outils pédagogiques à la pointe de la technologie (FabLab, imprimantes 3D, plateforme de virtualisation sous VMWare vSphere 6.7, laboratoires de recherche…) ;            
+                                <br>•	Des enseignants et des intervenants professionnels qualifiés
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="collapsible2" class="toggle" type="checkbox">
+                    <label for="collapsible2" class="lbl-toggle" style="font-size: 3.5rem; margin: 0; color: rgb(99, 127, 230,0.8);">DÉBOUCHÉS:</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner" class="intro">
+                            <p>
+                                Les diplômés de la formation ont accès à divers débouchés professionnels, tels que:
+                                <br>
+                                    <ul class="deb">
+                                       
+                                        <li>Ingénieur R&D</li>
+                                        <li>Chef de projet informatique</li>
+                                        <li>Ingénieur développeur</li>
+                                        <li>Administrateur de bases de données</li>
+                                        <li>Ingénieur conseil.</li>
+                                    </ul>
+                            </p>
+                      </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="wrap-collabsible">
+                        <input id="collapsible3" class="toggle" type="checkbox">
+                        <label for="collapsible3" class="lbl-toggle" style="font-size: 3.5rem; margin: 0; color: rgb(99, 127, 230,0.8);">PROGRAMME:</label>
+                        <div class="collapsible-content">
+                            <div class="content-inner" class="intro">
+                                <p>
+                                    <ul class="acc">
+                                        <li>
+                                            <input type="radio" name="acc" id="first">
+                                            <label for="first"><b>SEMESTRE 1</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>Algorithmique et Programmation Orientée Objet</li>
+                                                    <ul>
+                                                        <li>Algorithmique liée à JAVA </li>
+                                                        <li>JAVA objet oriente (tous se qui liée a JAVA)</li>
+                                                    </ul>
+                                                    <li>Base de Données et modélisation informatique appliquée aux sciences de la santé</li>
+                                                    <li>Infrastructure Système et Réseaux	</li>
+                                                    <li>Bio Analyse I : notions de probabilités et de statistiques	</li>
+                                                    <li>Bio Analyse II : Tests statistiques et Analyses multivariées	</li>
+                                                    <li>Méthodes numériques appliquées aux sciences de la santé	</li>
+                                                    <li>Introduction au développement durable	</li>
+                                                    <li>Techniques de communication orale	</li>
+                                                    <li>Management Hospitalier	</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="second">
+                                            <label for="second"><b>SEMESTRE 2</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>Génie Logiciel appliqué aux sciences de la santé	</li>
+                                                    <li>Bases de Données 2	</li>
+                                                    <li>Programmation WEB – Health softwares	</li>
+                                                    <li>Bio analyse et statistiques avancées	</li>
+                                                    <li>Business Intelligence & Data Mining	</li>
+                                                     <ul>
+                                                        <li>Théorie de jeux, (oriente IA & Data)</li>
+                                                     </ul>
+                                                    <li> Ressources et énergie	</li>
+                                                    <li> Langues & Communication 2	</li>
+                                                    <li> Le risque sociétal dans le métier de l’ingénieur	</li>
+                                                    <li> Economie et comptabilité appliquée aux sciences de la santé	</li>
+                                                    <li> Management Hospitalier – Marketing Médical et Pharmaceutique		</li>
+                                                    <li> Projet de Synthèse I</li>
+                                                    <ul>
+                                                        <li>  Chaque année un nouveau problématique (Smart city, gestion  intelligent de l’hôpital…), application de tous les outils et les langages de programmations ce qui étudiée dans S1 et S2</li>
+                                                    </ul>
+                                                </ul>          
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="third">
+                                            <label for="third"><b>SEMESTRE 3</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>Architecture et Urbanisation des SI	</li>
+                                                    <li>Conduite de projet	</li>
+                                                    <ul>
+                                                        <li>Projet site e-commerce, dépend de choix de vous prof (Angular, Spring Boot ).</li>
+                                                    </ul>
+                                                    <li>Analyse de cycle de vie	</li>
+                                                    <li>Introduction à la recherche	</li>
+                                                    <li>Recherche opérationnelle appliquée aux sciences de la santé I	</li>
+                                                    <li>Calculabilité et complexité	</li>
+                                                    <li>Réseaux et Virtualisation I	</li>
+                                                    <ul>
+                                                        <li>(orienté vers network & cloud)</li>
+                                                    </ul>
+                                                    <li>Bases de Données Avancées	</li>
+                                                    <ul>
+                                                        <li>mongo DB & Haven</li>
+                                                    </ul>
+                                                    <li>Architectures applicatives		</li>
+                                                    <li>Langues et Communication 3	</li>
+                                                    <li>Conduite du Changement en milieu Hospitalier I		</li>
+                                                    <li>Economie appliquée aux sciences de la santé		</li>
+                                                </ul>  
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="fourth">
+                                            <label for="fourth"><b>SEMESTRE 4</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>Administration de bases de données appliquées aux sciences de la santé	</li>
+                                                    <li>Réseaux et Virtualisation II	</li>
+                                                    <ul>
+                                                        <li>network & Cloude</li>
+                                                    </ul>
+                                                    <li>Files d’attente et simulations	</li>
+                                                    <li>Recherche opérationnelle appliquée aux sciences de la santé II	</li>
+                                                    <li>Preuve de programmes	</li>
+                                                    <li>Informatique décisionnelle	</li>
+                                                    <li>Logique avancée	</li>
+                                                    <li>Responsabilités de l’ingénieur et développement durable	</li>
+                                                    <li>Langues & Communication 4		</li>
+                                                    <li>Innovation et entrepreneuriat	</li>
+                                                    <li>Conduite du Changement en milieu Hospitalier II		</li>
+                                                    <li>Projet de Synthèse II- Informatique en milieu hospitalier</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="fifth">
+                                            <label for="fifth"><b>SEMESTRE 5</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>BPM</li>
+                                                    <li>Conduite de projets	</li>
+                                                    <li>Sécurité des systèmes d’information hospitaliers	</li>
+                                                    <li>Calcul formel	</li>
+                                                    <li>Big Data	</li>
+                                                    <li>Infrastructures numériques et énergie	</li>
+                                                    <li>Algorithmique distribuée	</li>
+                                                    <li>Langues et Communication 5		</li>
+                                                    <li>Responsabilité sociale des entreprises et développement durable – Management de la RSE		</li>
+                                                    <li>Modélisation des procédures de workflow		</li>
+                                                    <li>Business Intelligence		</li>
+                                                    <li>IoT	</li>
+                                                    <li>Apprentissage automatique		</li>
+                                                    <li>Spécialisation Data Engineering – 5			</li>
+                                                    <li>Organisation du système national de santé			</li>
+                                                    <li>Ingénierie des Sos		</li>
+                                                    <li>Spécialisation SI Santé – 5		</li>
+                                                    <li>Spécialisation Mobilité & Cloud Computing – 5		</li>
+                                                    <li>Gestion de flotte		</li>
+                                                    <li>Conduite opérationnelle d’un projet SI			</li>
+                                                    <li>Projet personnel			</li>
+                                                    <li>Qualité des Processus			</li>
+                                                    <li>ERP hospitalier			</li>
+                                    
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="acc" id="sixth">
+                                            <label for="sixth"><b>SEMESTRE 6</b></label>
+                                            <div class="cont">
+                                                <ul>
+                                                    <li>PROJET DE FIN D'ETUDE (PFE)</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap-collabsible">
+                    <input id="collapsible4" class="toggle" type="checkbox">
+                    <label for="collapsible4" class="lbl-toggle" style="font-size: 3.5rem; margin: 0; color: rgb(99, 127, 230,0.8);">Anatage:</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner" class="intro">
+                            <p>
+                                Les diplômés de la formation ont accès à divers débouchés professionnels, tels que:
+                                <br>
+                                    <ul class="deb">
+                                       
+                                        <li>Les diplômés de la formation ont accès à divers débouchés professionnels, tels que:</li>
+                                <li>Formation très bonne, surtout si tu veux continuer dans le développement.</li>
+                                <li>Diplôme reconnu par l'État.</li>
+                                <li>Bien qu'elle semble être une école de génie informatique en général, elle couvre de nombreux domaines (data, IA, développement, etc.) comme si elle se spécialisait dans chacun d'eux.</li>
+                                <li>Les classes comptent au maximum 20 étudiants, et 6 à 14 obtiennent un double diplôme.</li>
+                                <li>La bourse t'est retirée parce que l'école est affiliée à une université privée.</li>
+
+                                    </ul>
+                            </p>
+                      </div>
+                    </div>
+                </div>
+                <!-- <div class="wrap-collabsible">
+                    <input id="collapsible2" class="toggle" type="checkbox">
+                    <label for="collapsible2" class="lbl-toggle" style="font-size: 3.5rem; margin: 0; color: rgb(99, 127, 230,0.8);">Avantages:</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner" class="intro">
+                            <p>
+                                
+                                
+                            </p>
+                      </div>
+                    </div>
+                </div> -->
+                <div class="wrap-collabsible">
+                    <input id="collapsible5" class="toggle" type="checkbox">
+                    <label for="collapsible5" class="lbl-toggle" style="font-size: 3.5rem; margin: 0; color: rgb(99, 127, 230,0.8);">Incovenients:</label>
+                    <div class="collapsible-content">
+                        <div class="content-inner" class="intro">
+                            <p>
+                                <br>
+                                    <ul class="deb">
+                                        <li>La bourse t'est retirée parce que l'école est affiliée à une université privée.</li>
+                                        <li>Hébergement coûte environ 2 millions de dirhams par an.</li>
+                                        <li>Réseau payant, tu dois acheter une carte et la recharger, et les repas coûtent au moins 35 dirhams sans être rassasiants.</li>
+                                        <li>Affiliée à Zahraoui et considérée comme privée même si elle est publique, juste parce que Zahraoui est privé, tu ne peux donc pas demander une résidence universitaire car elle est considérée comme privée.</li>
+                                        <li>La pire administration du monde.</li>
+                                        <li>Emploi du temps surchargé.</li>
+                                        <li>Pas du tout d'activités parascolaires.</li>
+                                        <li>Les études sont très strictes.</li>
+                                        <li>Les absences sont autorisées mais tu ne peux pas en abuser et tu ne dois pas dépasser 40 heures par semestre.</li>
+                                        <li>Pour ceux qui viennent après les classes préparatoires et veulent rigoler et s'amuser, cette école n'est pas faite pour cela.</li>
+                                        <li>Cette école n'a que trois promotions, donc pas toutes les entreprises la connaissent comme l'INPT ou l'ENSIAS...</li>
+                                        </ul>
+                            </p>
+                      </div>
+                    </div>
+                </div>
+
+            </div> 
+            <!-- DD&ECHANGE -->
+            <div>
+                <h2 id="DD" class="sub_ttl" style="margin-bottom: 39px;">DD & Echange :</h2> 
+                <div class="Fichier-DD">
+                    <object type="application/pdf"
+                    data="../Assets/schools/EIA/Brochure_EIA.pdf"
+                    width="450px"
+                    height="410px"
+                    style="align-self: left; margin-right: 14px;"></object>
+                </div>
+                <div style="margin-top: 40px;">
+                    <table class="styled-table" style="margin-left: 110px;margin-top: 0; 
+                    width: 1200px; height: 470px; 
+                    font-size: 15px;">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th style="border-top: 0; border-left: 0; background-color: white;"></th>
+                                <th>
+                                    Départements et Spécialités
+                                    <br>Disponibles :<br>
+                                </th>
+                                <th>Processus d'échange/double <br>
+                                diplomation</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Row 3</td>
+                            <td  style="background-color: rgb(99, 127, 230);">
+                                <b>
+                                    EPISEN
+                                    <br>
+                                    (école public en France)
+                                </b>
+                            </td>
+                            <td> Genie Informatique</td>
+                            <td style="text-align: left;">Entretien avec des jurés de EPISEN avec des test ça dépend de jurés
+                               <br>le nombre des etudiants n’est pas fixé 
+                               <br>
+                               Après la deuxième année, vous irez en France pour terminer vos études. Les frais de scolarité sont gratuits, mais vous devez prendre en charge les frais de logement et de repas.
+                                <br>En troisième année, vous avez le droit de choisir l'une des spécialités suivantes : science des données, cybersécurité, développement, etc.
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+         
+            <!-- COMITES&CLUBS -->
+            <h2 class="sub_ttl" id="comites">Comités&Clubs :</h2>
+            <div class="card-container">
+                <div class="card">
+                    <a href="https://www.instagram.com/uiassharing?igsh=MTBrYzd2ZTdjZnVnYQ==" target="_blank">
+                        <img src="../Assets/schools/EIA/images/sharing.jpeg" alt="">
+                    <div class="card-content">
+                        <h3>UIASSHARING</h3>
+                        <p>
+                            est un club à but non lucratif, fondé par un groupes des élèves ingénieurs. Un club où se mêlent altruisme,générosité et esprit d'équipe ainsi que toute sorte de bénévolat et de charité.                        </p>
+                        <button href="" class="btn">Read more</button>
+                    </div> 
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="https://www.instagram.com/uiass.bde?igsh=aDlrMTFoZXlxNnhj" target="_blank">
+                        <img src="../Assets/schools/EIA/images/bde.jpeg" alt="">
+                    <div class="card-content">
+                        <h3>BDE UIASS</h3>
+                        <p>
+                            Ils organisent des manifestations culturelles et des conférences pour enrichir la vie étudiante et promouvoir la diversité culturelle au sein de l'institut.                        </p>
+                        <button href="" class="btn">Read more</button>
+                    </div>
+                    </a>
+                    
+                </div>
+                
+              
+            </div>
+            <!-- CAMPUS -->
+<h2 class="sub_ttl" style="margin-bottom: 39px; margin-top: 50px;">Compus:</h2> 
+            <h3 class="comiteEcri">Frais de l’internat 20 000dh par année ainsi que resto 25dh pour un repas 
+                Pas le droit postuler a cité universitaire car Elle est sous la tutelle du  l’Université Internationale Abulcasis des Sciences de la Santé(UIASS)  privé.
+                </h3>
+                <div style="display: flex; flex-direction: row;">
+                    <div class="boody">
+                        <div class="containerr">
+                            <div class="sliderWrap">
+                                <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+                                <ul class="imgList">
+                                    <img src="../Assets/schools/EIA/images/repas2.jpg" alt="im1" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/reaps1.jpg" alt="im2" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/repas3.jpg" alt="im3" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/reaps4.jpg" alt="im13" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/reaps5.jpg" alt="im4" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/reaps6.jpg" alt="im5" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/reaps7.jpg" alt="im6" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/repas8.jpg" alt="im7" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/internat2.jpg" alt="im8" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/internat1.jpg" alt="im9" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/internat3.jpg" alt="im10" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/chamber1.jpg" alt="im11" class="imgItem">
+                                    <img src="../Assets/schools/EIA/images/chamber2.jpg" alt="im12" class="imgItem">
+                                </ul>
+                                <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
+                            </div>
+                            <div class="sliderScrol">
+                                <div class="scrolTrack">
+                                    <div class="scrolThumb"></div>
+                                </div>
+                            </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="comments-section">
+        <h2 style="font-size: large; color: darkblue;">Comments</h2>
+        <div id="comments"></div>
+    </div> 
+    <div class="comment-form">
+        <textarea id="comment-input" placeholder="Write a comment..." disabled></textarea>
+        <button id="post-comment-btn" disabled>Post Comment</button>
+    </div>
+    <footer class="footer">
+        <div class="logo-container">
+            <img src="../Assets/schools/EIA/logo.png" alt="Computer-Science Compass Logo" class="logo" >
+            <h1 class="sub">All rights reserved</h1>
+        </div>
+        
+        <div class="icons-school">
+            <a href="https://www.uiass.ma/ingenierie-biomedicale/" target="_blank"><i class="fa-solid fa-link" style="color: white;"></i></a>
+            <a href="https://www.linkedin.com/school/uiass/" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: white;"></i></a>
+            <a href="https://www.instagram.com/uiass.rabat?igsh=MW9xZ283aXZkNHFjOQ==" target="_blank"><i class="fa-brands fa-instagram" style="color: white;"></i></a>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+    <script src="../KM_Log/signin.js"></script>
+    <script src="../Assets/schools/EIA/eia.js"></script>
+</body>
+</html>

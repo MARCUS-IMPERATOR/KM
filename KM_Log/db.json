@@ -1,0 +1,142 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "34343",
+      "firstName": "karim",
+      "email": "karim@gmail.com",
+      "password": "hashed_1234"
+    },
+    {
+      "id": "34690",
+      "firstName": "omar",
+      "email": "omar@gmail.com",
+      "password": "hashed_12345"
+    },
+    {
+      "id": "78128",
+      "firstName": "mouadB",
+      "email": "mouadB@hg.fr",
+      "password": "hashed_test"
+    },
+    {
+      "id": "33587",
+      "firstName": "karim",
+      "email": "karim@gmail.com",
+      "password": "hashed_123"
+    },
+    {
+      "id": "96289",
+      "firstName": "hamza",
+      "email": "hamza@jj.com",
+      "password": "hashed_test"
+    },
+    {
+      "id": "78916",
+      "firstName": "asmae",
+      "email": "asmae@jr.com",
+      "password": "hashed_test"
+    },
+    {
+      "id": "10406",
+      "firstName": "mehdi",
+      "email": "mehdi5@fkj.com",
+      "password": "hashed_12345"
+    },
+    {
+      "id": "30727",
+      "firstName": "khalid",
+      "email": "khalid@jh.com",
+      "password": "hashed_123456"
+    },
+    {
+      "id": "92742",
+      "firstName": "khalid",
+      "email": "khalid@jh.com",
+      "password": "hashed_123456"
+    },
+    {
+      "id": "34083",
+      "firstName": "omar",
+      "email": "omar@iu.com",
+      "password": "hashed_1234"
+    },
+    {
+      "id": "53784",
+      "firstName": "mehdi",
+      "email": "mehdi@jbij.fr",
+      "password": "hashed_12345"
+    },
+    {
+      "id": 59167,
+      "firstName": "hamza",
+      "email": "test@gmail.com",
+      "password": "hashed_testtest"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1631",
+      "user": "mehdi",
+      "comment": "dfgdgfhg",
+      "timestamp": "2024-05-18T16:19:55.106Z"
+    },
+    {
+      "id": "d10b",
+      "user": "mehdi",
+      "comment": "good job adrari",
+      "timestamp": "2024-05-18T19:05:48.784Z"
+    },
+    {
+      "id": "f227",
+      "user": "omar",
+      "comment": "thanks bro",
+      "timestamp": "2024-05-18T19:09:59.024Z"
+    },
+    {
+      "id": "6d09",
+      "user": "hamza",
+      "comment": "Hot Garbage School",
+      "timestamp": "2024-05-19T00:06:13.638Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "100",
+      "firstName": "John",
+      "lasetName": "Doe",
+      "Number": "+1234567890",
+      "Email": "admin@gmail.com",
+      "message": "werhjggryyuj6uyytu"
+    },
+    {
+      "id": "55",
+      "firstName": "John",
+      "lasetName": "Doe",
+      "Number": "+1234567890",
+      "Email": "admin@gmail.com",
+      "message": "werhjggryyuj6uyytu"
+    },
+    {
+      "id": "98",
+      "firstName": "John",
+      "lasetName": "Doe",
+      "Number": "+1234567890",
+      "Email": "admin@gmail.com",
+      "message": "werhjggryyuj6uyytu"
+    },
+    {
+      "id": "43",
+      "firstName": "John",
+      "lasetName": "Doe",
+      "Number": "+1234567890",
+      "Email": "omar@gmail.com",
+      "message": "ertfhgjgrtyjjhk"
+    }
+  ]
+}

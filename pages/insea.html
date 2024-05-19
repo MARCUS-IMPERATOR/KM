@@ -11,48 +11,65 @@
 </head>
 <body>
     <header class="header">
-    <ul class="bar">
-        <li><a href="#acceuil">Acceuil</a></li>
-        <li><a href="#filieres">Filières</a></li>
-        <li><a href="#dd">DD & Echange</a></li>
-        <li><a href="#comites">Comités</a></li>
-        <li><a href="#">Clubs</a></li>
-        <li><a href="#">Compus</a></li>
-        <li><a href="../schools.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
-    </ul>
-</header>
-<main>
-    <section class="banner" id="acceuil">
-        <div class="top">
-            <h1 class="title">INSEA</h1>
+        <div class="logo1">
+            <img src="../Assets/images/LOGO-removebg-preview.png" alt="" style="height: 120px; width: 140px;" >
+           
         </div>
-        <div class="acceuil">
-            <div class="box-presentation">
-                <h2 class="sub_ttl1">
-                    Presentation :
-                </h2>
-                <p style="color: white;">
-                    L'Institut national de statistique et d'économie appliquée (INSEA) est l'une des grandes écoles d'ingénieurs marocaines située à Rabat et créée en 1961.
-
-                    Il s'est substitué, par décret royal, au Centre de formation d'ingénieurs des travaux statistiques en 1967 grâce à l'appui de la Commission économique pour l'Afrique (CEA).
-                    
-                    L'Institut est sous la tutelle du Haut-Commissariat au plan, organe national de la planification économique.                    
-                </p>
+        <div class="bar">
+            <ul>
+                <li><a href="#acceuil">Acceuil</a></li>
+                <li><a href="#filieres">Filières</a></li>
+                <li><a href="#comites">Comités&Clubs</a></li>
+                <li><a href="#DD">DD&Echange</a></li>
+                <li><a href="#compus">Compus</a></li>
+                <!-- <li><a href="../schools.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li> -->
+            </ul>
+        </div>
+        <div class="login-bar">
+            <div class="header_cont" style="background-color:rgba(255, 255, 255, 0) ;">
+                <ul>
+                    <li><a href="../../KM_Log/Signin.html"><button id="login_btn">Log In</button></a></li>
+                    <li><a href="../../KM_Log/Signup.html"><button id="logup_btn">Sign Up</button></a></li>
+                    <span id="username"></span>
+                    <button href="#" id="logout_btn" >Log Out</button>
+                    <li><a href="schools.html" target="_blank"><i class="fa-solid fa-house"></i></a></li>
+                </ul>
             </div>
-            <div class="box-icon-loc">
-                <div class="box-localisation">
+        </div>
+    
+    </header>
+    <main>
+        <section class="banner" id="acceuil">
+            <div class="top">
+                <h1 class="title">INSEA</h1>
+            </div>
+            <div class="acceuil">
+                <div class="box-presentation">
                     <h2 class="sub_ttl1">
-                        Localisation :
+                        Presentation :
                     </h2>
-                    <a href="https://www.google.com/maps/place/Institut+National+de+Statistique+et+d'Economie+Appliqu%C3%A9e/@33.9817843,-6.8629634,15z/data=!4m6!3m5!1s0xda76cc2305fe733:0x877696d1bf2ecee6!8m2!3d33.9817843!4d-6.8629634!16s%2Fm%2F0dd9l31?entry=ttu" target="_blank">
-                        <img src="../Assets/schools/INSEA/insealoca.jpg"  alt="" class="location">
-                    </a>
+                    <p style="color: white;">
+                        L'Institut national de statistique et d'économie appliquée (INSEA) est l'une des grandes écoles d'ingénieurs marocaines située à Rabat et créée en 1961.
+
+                        Il s'est substitué, par décret royal, au Centre de formation d'ingénieurs des travaux statistiques en 1967 grâce à l'appui de la Commission économique pour l'Afrique (CEA).
+                        
+                        L'Institut est sous la tutelle du Haut-Commissariat au plan, organe national de la planification économique.                    
+                    </p>
+                </div>
+                <div class="box-icon-loc">
+                    <div class="box-localisation">
+                        <h2 class="sub_ttl1">
+                            Localisation :
+                        </h2>
+                        <a href="https://www.google.com/maps/place/Institut+National+de+Statistique+et+d'Economie+Appliqu%C3%A9e/@33.9817843,-6.8629634,15z/data=!4m6!3m5!1s0xda76cc2305fe733:0x877696d1bf2ecee6!8m2!3d33.9817843!4d-6.8629634!16s%2Fm%2F0dd9l31?entry=ttu" target="_blank">
+                            <img src="../Assets/schools/INSEA/insealoca.jpg"  alt="" class="location">
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <div class="container">
-        <h2 class="sub_ttl">Filieres :</h2>
+        <h2 class="sub_ttl" id="filieres">Filieres :</h2>
             <div class="DSE">
                 <div class="wrap-collabsible">
                     <input id="collapsible1" class="toggle" type="checkbox">
@@ -342,7 +359,7 @@
     <div>
     <!-- DD&ECHANGE -->
     <div>
-        <h2 class="sub_ttl" style="margin-bottom: 39px;">DD & Echange :</h2> 
+        <h2 class="sub_ttl" id="DD" style="margin-bottom: 39px;">DD & Echange :</h2> 
         <div>
             <object type="application/pdf"
             data="../Assets/schools/INSEA/Etudier à ULaval.pdf"
@@ -511,7 +528,7 @@
             </script>
         </div>
         <!-- CAMPUS -->
-            <h2 class="sub_ttl" style="margin-bottom: 39px; margin-top: 50px;">Compus:</h2> 
+            <h2 class="sub_ttl" id="compus" style="margin-bottom: 39px; margin-top: 50px;">Compus:</h2> 
             <h3 class="comiteEcri">L'Institut dispose d'un internat offrant près de 500 chambres individuelles pour ses étudiants, et depuis octobre 1994, l'INSEA possède un restaurant capable d'accueillir environ 600 personnes, servant en moyenne 1 200 repas par jour, incluant le petit déjeuner, le déjeuner et le dîner. De plus, la bibliothèque de l'INSEA, ouverte en accès libre depuis 2013, permet aux usagers de parcourir les documents sur les rayonnages et de travailler dans un environnement à la fois calme et dynamique:</h3>
                 <div style="display: flex; flex-direction: row;">
                     <div class="boody">
@@ -546,6 +563,15 @@
 
 </main>
 
+<div id="comments-section">
+    <h2 style="font-size: large; color: darkblue;">Comments</h2>
+    <div id="comments"></div>
+</div> 
+<div class="comment-form">
+    <textarea id="comment-input" placeholder="Write a comment..." disabled></textarea>
+    <button id="post-comment-btn" disabled>Post Comment</button>
+</div>
+
     <footer class="footer" style="background-color: rgb(16 101 49);">
         <div class="logo-container">
             <img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
@@ -558,6 +584,7 @@
         </div>
     </footer>
     <script src="../Assets/schools/INSEA/js/inseaa.js" defer></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script src="../KM_Log/signin.js"></script>
 </body>
 </html>
