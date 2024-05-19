@@ -1,0 +1,118 @@
+<ul class="acc">
+    <li>
+        <input type="radio" name="acc" id="first">
+        <label for="first"><b>SEMESTRE 1</b></label>
+        <div class="cont">
+            <ul>
+                <li>Algorithmique et Programmation Orientée Objet</li>
+                <li>Base de Données et modélisation informatique appliquée aux sciences de la santé</li>
+                <li>Infrastructure Système et Réseaux	</li>
+                <li>Bio Analyse I : notions de probabilités et de statistiques	</li>
+                <li>Bio Analyse II : Tests statistiques et Analyses multivariées	</li>
+                <li>Méthodes numériques appliquées aux sciences de la santé	</li>
+                <li>Introduction au développement durable	</li>
+                <li>Techniques de communication orale	</li>
+                <li>Management Hospitalier	</li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="acc" id="second">
+        <label for="second"><b>SEMESTRE 2</b></label>
+        <div class="cont">
+            <ul>
+                <li>Génie Logiciel appliqué aux sciences de la santé	</li>
+                <li>Bases de Données 2	</li>
+                <li>Programmation WEB – Health softwares	</li>
+                <li>Bio analyse et statistiques avancées	</li>
+                <li>Business Intelligence & Data Mining	</li>
+                <li> Ressources et énergie	</li>
+                <li> Langues & Communication 2	</li>
+                <li> Le risque sociétal dans le métier de l’ingénieur	</li>
+                <li> Economie et comptabilité appliquée aux sciences de la santé	</li>
+                <li> Management Hospitalier – Marketing Médical et Pharmaceutique		</li>
+                <li> Projet de Synthèse I</li>
+            </ul>        
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="acc" id="third">
+        <label for="third"><b>SEMESTRE 3</b></label>
+        <div class="cont">
+            <ul>
+                <li>Architecture et Urbanisation des SI	</li>
+                <li>Conduite de projet	</li>
+                <li>Analyse de cycle de vie	</li>
+                <li>Introduction à la recherche	</li>
+                <li>Recherche opérationnelle appliquée aux sciences de la santé I	</li>
+                <li>Calculabilité et complexité	</li>
+                <li>Réseaux et Virtualisation I	</li>
+                <li>Bases de Données Avancées	</li>
+                <li>Architectures applicatives		</li>
+                <li>Langues et Communication 3	</li>
+                <li>Conduite du Changement en milieu Hospitalier I		</li>
+                <li>Economie appliquée aux sciences de la santé		</li>
+            </ul>  
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="acc" id="fourth">
+        <label for="fourth"><b>SEMESTRE 4</b></label>
+        <div class="cont">
+            <ul>
+                <li>Administration de bases de données appliquées aux sciences de la santé	</li>
+                <li>Réseaux et Virtualisation II	</li>
+                <li>Files d’attente et simulations	</li>
+                <li>Recherche opérationnelle appliquée aux sciences de la santé II	</li>
+                <li>Preuve de programmes	</li>
+                <li>Informatique décisionnelle	</li>
+                <li>Logique avancée	</li>
+                <li>Responsabilités de l’ingénieur et développement durable	</li>
+                <li>Langues & Communication 4		</li>
+                <li>Innovation et entrepreneuriat	</li>
+                <li>Conduite du Changement en milieu Hospitalier II		</li>
+                <li>Projet de Synthèse II- Informatique en milieu hospitalier			</li>
+            </ul>
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="acc" id="fifth">
+        <label for="fifth"><b>SEMESTRE 5</b></label>
+        <div class="cont">
+            <ul>
+                <li>BPM</li>
+                <li>Conduite de projets	</li>
+                <li>Sécurité des systèmes d’information hospitaliers	</li>
+                <li>Calcul formel	</li>
+                <li>Big Data	</li>
+                <li>Infrastructures numériques et énergie	</li>
+                <li>Algorithmique distribuée	</li>
+                <li>Langues et Communication 5		</li>
+                <li>Responsabilité sociale des entreprises et développement durable – Management de la RSE		</li>
+                <li>Modélisation des procédures de workflow		</li>
+                <li>Business Intelligence		</li>
+                <li>IoT	</li>
+                <li>Apprentissage automatique		</li>
+                <li>Spécialisation Data Engineering – 5			</li>
+                <li>Organisation du système national de santé			</li>
+                <li>Ingénierie des Sos		</li>
+                <li>Spécialisation SI Santé – 5		</li>
+                <li>Spécialisation Mobilité & Cloud Computing – 5		</li>
+                <li>Gestion de flotte		</li>
+                <li>Conduite opérationnelle d’un projet SI			</li>
+                <li>Projet personnel			</li>
+                <li>Qualité des Processus			</li>
+                <li>ERP hospitalier			</li>
+
+            </ul>
+        </div>
+    </li>
+    <li>
+        <input type="radio" name="acc" id="sixth">
+        <label for="sixth"><b>SEMESTRE 6</b></label>
+        <div class="cont">
+            <ul>
+                <li>PROJET DE FIN D'ETUDE (PFE)</li>
+            </ul>
+        </div>
+    </li>

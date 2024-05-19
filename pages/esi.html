@@ -12,8 +12,15 @@
         <div class="header_cont">
             <img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
             <h1 class="name">Computer-Science Compass</h1>
+       
+            <div class="header_cont" style="background-color:rgba(255, 255, 255, 0) ;">
+                <a href="../KM_Log/Signin.html"><button id="login_btn">Log In</button></a> 
+                <a href="../KM_Log/Signup.html"><button id="logup_btn">Log Up</button></a> 
+                <span id="username"></span>
+                <button href="#" id="logout_btn" >Log Out</button>
+            </div>
         </div>
-    </header>
+    </header>>
     <main>
         <div class="top">
             <img src="../Assets/schools/ESI/school.jpeg" alt="" class="scl_img">
@@ -168,6 +175,14 @@
             style="align-self: center;"></object>
         </div>
     </main>
+    <div id="comments-section">
+        <h2 style="font-size: large; color: darkblue;">Comments</h2>
+        <div id="comments"></div>
+    </div> 
+    <div class="comment-form">
+        <textarea id="comment-input" placeholder="Write a comment..." disabled></textarea>
+        <button id="post-comment-btn" disabled>Post Comment</button>
+    </div>
     <footer class="footer">
         <img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
         <h1 class="rights">All rights reserved</h1>
@@ -175,5 +190,6 @@
     <button class="bttn_top" id="top" onclick="scrollToTop()">
     </button>
     <script src="../script.js"></script>
+    <script src="..."></script>
 </body>
 </html>

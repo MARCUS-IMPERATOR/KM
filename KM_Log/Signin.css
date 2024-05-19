@@ -1,0 +1,184 @@
+
+/*.container{
+    background-color: rgba(60, 101, 179, 0.785);
+}
+.form-box {
+  width: 80%;
+  max-width: 240px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #8c9fe9;
+  padding: 50px 60px 70px;
+  text-align: center;
+  border-radius: 20px;
+}
+.form-box h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: #3c00a0;
+  position: relative;
+ 
+}
+.input-field{
+  border-radius: 5px;
+  font-size: 20px;
+}
+.button{
+  
+      padding: 16px 42px;
+      border-radius: 3px;
+      box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+      line-height: 1.25;
+      background: #1dbbe2;
+      text-decoration: none;
+      top: 45px;
+      color: white;
+      font-size: 16px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      position: relative;
+      transition: background-color .6s ease;
+      overflow: hidden;
+      &:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        top: 50%;
+        left: 50%;
+        top: var(--mouse-y);
+        left: var(--mouse-x);
+        transform-style: flat;
+        transform: translate3d(-50%,-50%,0);
+        background: rgba(white,.1);
+        border-radius: 100%;
+        transition: width .3s ease, height .3s ease;
+      }
+
+                              https://youtu.be/RNpwGFjih0Q?si=B8e219RnTLbfOfws
+                                      https://youtu.be/DqyJFV7QJqc?si=_nzJaNSerCk9voT5
+
+
+{
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+  "scripts" :{
+    "start": "json-server --watch ./database/db.json"
+  }
+}
+
+
+
+
+      &:focus,
+      &:hover {
+          background: darken(#2f6ae0,7%);
+      }
+      &:active {
+        &:after {
+          width: 300px;
+          height: 300px;
+        }
+      }
+  
+}*/
+body{
+    width: 90%;
+    height: 90vh;
+   /* background-image: linear-gradient(rgba(0,0,50,0,8),rgba(0,0,50,0,8)),url(imag.jpg);*/
+   
+    position: relative;
+    background-image: url("imag.jpg");
+    background-size: cover; /* This makes the image cover the entire area of the.form-box */
+    background-position: center; /* This centers the image */ 
+  }
+  .form-box{
+    width: 265px;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    border-radius: 20px;
+    text-align: center;
+
+        
+    
+  }
+
+
+  .form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #3c00a0;
+    position: relative
+  }
+  .form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius:3px ;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .input-field{
+      background: #eaeaea;
+      margin: 15px 0;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      max-height: 65px;
+      transition: max-height 0.5s;
+      overflow: hidden;
+  }
+  input{
+      width: 100%;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      padding: 18px 15px ;
+  }
+  .input-field i{
+      margin-left: 15px;
+      color: #999;
+  }
+  form p{
+      text-align: left;
+      font-size: 13px;
+  
+  }
+  form p a{
+      text-decoration: none;
+      color: #3c00a0;
+  }
+  .btn-field{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      
+  
+  }
+  .btn-field button{
+      flex-basis: 48%;
+      background: #3c00a0;
+      color: #fff;
+      height: 40px;
+      border-radius: 20px;
+      border: 0;
+      margin-top: 5px;
+      outline: 0;
+      text-align: center;
+      cursor: pointer;
+      transition: background 1s;
+  }
+  
+  

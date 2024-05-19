@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Signup</title> 
+    <link rel="stylesheet" href="Signup.css">
+</head>
+    
+    <body>
+              <div class="form-box">
+                 <h1 id="title">Sign Up</h1>
+                 <form id="signup-form" >
+                    <div class="input-group">
+                        <div class="input-field">
+                            <img src="images/user.png" alt="user">
+                            <input type="text"  id="first-name" placeholder="Name" required>  
+                        </div>
+                        <div class="input-field" >
+                           <img src="images/email.png" alt="">
+                            <input type="email"  id="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-field">
+                            <img src="images/lock.png" alt="">
+                             <input type="password" id="password" placeholder="password" required>
+                         </div>
+                    </div>
+                    <div class="btn-field">
+                        <button type="submit" >Sign Up</button>
+                        <a  href="Signin.html" class="btn-field"> 
+                            <button type="button"  >Sign In</button>
+                        </a>
+                        
+                    </div>
+                 </form>
+                 <p id="signup-message"></p>
+    <script src="signup.js"></script>
+              </div>
+
+    </body>
+</html>
+
+

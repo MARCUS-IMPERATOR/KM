@@ -19,6 +19,14 @@
         <li><a href="#">Clubs</a></li>
         <li><a href="#">Compus</a></li>
         <li><a href="../schools.html"><i class="fa-solid fa-house" style="color: #ffffff;"></i></a></li>
+        <li>
+            <div class="header_cont" style="background-color:rgba(255, 255, 255, 0) ;">
+                <a href="../KM_Log/Signin.html"><button id="login_btn">Log In</button></a> 
+                <a href="../KM_Log/Signup.html"><button id="logup_btn">Log Up</button></a> 
+                 <span id="username"></span>
+                 <button href="#" id="logout_btn" >Log Out</button>
+             </div>
+        </li>
     </ul>
 </header>
 <main>
@@ -546,6 +554,15 @@
 
 </main>
 
+<div id="comments-section">
+    <h2 style="font-size: large; color: darkblue;">Comments</h2>
+    <div id="comments"></div>
+</div> 
+<div class="comment-form">
+    <textarea id="comment-input" placeholder="Write a comment..." disabled></textarea>
+    <button id="post-comment-btn" disabled>Post Comment</button>
+</div>
+
     <footer class="footer" style="background-color: rgb(16 101 49);">
         <div class="logo-container">
             <img src="../Assets/images/logo.jpg" alt="Computer-Science Compass Logo" class="logo" >
@@ -558,6 +575,7 @@
         </div>
     </footer>
     <script src="../Assets/schools/INSEA/js/inseaa.js" defer></script>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script src="../KM_Log/signin.js"></script>
 </body>
 </html>

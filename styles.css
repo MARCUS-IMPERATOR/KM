@@ -25,6 +25,131 @@ footer,section{
     padding: 3%;
     margin-bottom: 0;
 }
+
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #747272;
+}
+
+.header_cont {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #333;
+}
+
+.header_cont button, .header_cont #username {
+    margin-left: 10px;
+    color: #bbbbbb;
+    background: rgba(255, 255, 255, 0);
+    font-size: large;
+    border: none;
+    cursor: pointer;
+}
+
+.header_cont #logout_btn {
+    display: none;
+}
+
+/* Main content styling */
+.main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.slogan {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.search-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.search-cont input {
+    padding: 10px;
+    font-size: 1em;
+    width: 300px;
+    border: 1px solid #969494;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-cont button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* Comment form styling */
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.comment-form textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.comment-form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #05336f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Comments section styling            background-color: #ccc;
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px*/
+#comments-section {
+    padding: 20px;
+}
+
+#comments-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comment {
+    background-color: #ccc;
+    border: 1px solid #7d7d7d;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment strong {
+    color: #333;
+}
+
+
+
+
 header{
     /* position: fixed;
     box-sizing: border-box; */
@@ -58,7 +183,7 @@ hr {
 .header_cont{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: var(--dark_blue);
     padding: 0 20px 0 20px ;
     height: 70px;
