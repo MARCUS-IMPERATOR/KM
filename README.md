@@ -34,10 +34,11 @@ To install and run the Engineering Schools Discovery Website locally, follow the
    ```
    git clone https://github.com/....
    ```
-
-2. Navigate to the project directory:
+2. install node.js server into your pc
+   
+4. Navigate to the project directory:
    ```
-   cd ...
+   cd KM/KM_Log
    ```
 
 3. Install dependencies:
@@ -52,10 +53,10 @@ To install and run the Engineering Schools Discovery Website locally, follow the
 
 5. Start the server:
    ```
-   npm start
+   json-server --watch db.json --port 4202
    ```
 
-6. Open your web browser and navigate to `http://localhost:....` to access the website.
+6. Open your web browser and navigate to `http://localhost:4202/....` to access the website.
 
 ## Usage
 
