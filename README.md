@@ -56,7 +56,7 @@ To install and run the Engineering Schools Discovery Website locally, follow the
    json-server --watch db.json --port 4202
    ```
 
-6. Open your web browser and navigate to `http://localhost:4202/....` to access the website.
+6. Open your web browser and navigate to `http://localhost:4202/` to access the website.
 
 ## Usage
 
