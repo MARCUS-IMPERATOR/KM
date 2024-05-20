@@ -41,7 +41,7 @@ To install and run the Engineering Schools Discovery Website locally, follow the
    cd KM/KM_Log
    ```
 
-3. Initialize npm with default settings:
+5. Initialize npm with default settings:
    ```
    npm init -y
    ```
