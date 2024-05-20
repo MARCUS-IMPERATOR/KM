@@ -32,7 +32,7 @@ To install and run the Engineering Schools Discovery Website locally, follow the
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/....
+   git clone https://github.com/MARCUS-IMPERATOR/KM.git
    ```
 2. install node.js server into your pc
  
