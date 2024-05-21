@@ -360,7 +360,6 @@ button{
     grid-template-columns: repeat(2,1fr);
     color: #23364D;
     font-size: 5rem;
-    padding: 100px;
 }
 .result_card{  
     text-align: center;
