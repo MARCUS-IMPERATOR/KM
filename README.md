@@ -32,31 +32,31 @@ To install and run the Engineering Schools Discovery Website locally, follow the
 
 1. Clone the repository to your local machine:
    ```
-   git clone https://github.com/....
+   git clone https://github.com/MARCUS-IMPERATOR/KM.git
    ```
 2. install node.js server into your pc
-   
-4. Navigate to the project directory:
+ 
+4.Navigate to the KM_Log directory:
    ```
    cd KM/KM_Log
    ```
 
-3. Install dependencies:
+5. Initialize npm with default settings:
    ```
-   npm install
-   ```
-
-4. Set up the database:
-   ```
-   npm run db:setup
+   npm init -y
    ```
 
-5. Start the server:
+4. Open PowerShell and set the execution policy:
+   ```
+   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+   ```
+
+5.Run this command in the terminal of VS Code:
    ```
    json-server --watch db.json --port 4202
    ```
 
-6. Open your web browser and navigate to `http://localhost:4202/....` to access the website.
+6. Open your web browser and navigate to `http://localhost:4202/` to access the website.
 
 ## Usage
 
