@@ -1,0 +1,49 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    margin-top: 8rem;
+    margin-left: 25rem;
+    margin-right: 20rem;
+}
+.sub_ttl{
+    font-size: 5rem;
+    margin: 0;
+    color: #23364D;
+}
+.sub_ttl2{
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    color: #344863;
+    scroll-margin-top : 2.5em;
+}
+.sub_ttl3{
+    font-size: 2rem;
+    margin: 0;
+    color: #344863;
+    font-weight: bolder;
+}
+.sub_ttl4{
+    font-size: 1.8rem;
+    margin: 0;
+    text-indent: 50px;
+    text-decoration: underline;
+    color: #344863;
+    font-weight: bolder;
+}
+.parag{
+    text-align: center;
+    font-size: 2rem;
+    color:#405A7F;
+    margin: 20px;
+    word-spacing:10px;
+}
+.files{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 45px;
+    column-gap: 35px;
+}

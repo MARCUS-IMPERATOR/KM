@@ -73,10 +73,16 @@
       "password": "hashed_12345"
     },
     {
-      "id": 59167,
+      "id": "59167",
       "firstName": "hamza",
       "email": "test@gmail.com",
       "password": "hashed_testtest"
+    },
+    {
+      "id": 78284,
+      "firstName": "bruh",
+      "email": "bruh@gmail.com",
+      "password": "hashed_123"
     }
   ],
   "comments": [
@@ -103,6 +109,12 @@
       "user": "hamza",
       "comment": "Hot Garbage School",
       "timestamp": "2024-05-19T00:06:13.638Z"
+    },
+    {
+      "id": "3580",
+      "user": "bruh",
+      "comment": "bruh",
+      "timestamp": "2024-05-19T18:36:43.036Z"
     }
   ],
   "messages": [

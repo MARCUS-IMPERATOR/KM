@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.0"
+  },
+  "name": "km",
+  "description": "Welcome to our Engineering Schools Discovery Website README! This project aims to provide a comprehensive knowledge management database to assist students in discovering engineering schools and exploring various fields within Information Technology (IT). Whether you're a prospective student, educator, or industry professional, this platform is designed to be your go-to resource for navigating the world of engineering education.",
+  "version": "1.0.0",
+  "main": "script.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
