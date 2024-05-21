@@ -87,7 +87,7 @@ main > h1 {
     display: grid;
     grid-template-rows: 0fr 0fr;
     transition-timing-function: var(--slide-ease);
-    transition-duration: 200ms, 200ms, var(--slide-duration);
+    transition-duration: 20ms, 20ms, var(--slide-duration);
     transition-property: opacity, box-shadow, grid-template-rows;
     transition-delay: 0ms, 0ms, var(--slide-delay);
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
@@ -127,6 +127,7 @@ main > h1 {
 
 .content p {
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .content a {
