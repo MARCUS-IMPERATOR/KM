@@ -357,3 +357,39 @@ ol a:hover::before {
     border: 3px solid var(--dark_blue);
 	transform: rotate(360deg);
 }
+.schl_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 10px;
+    margin-top: 100px;
+    padding: 10px;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .3s;
+    border: 1px solid lightgray;
+    border-bottom: 2px solid #23364D;
+    width: 350px;
+    height: 400px;
+}
+.schl_cont:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+}
+.schl_logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+.club_cont{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.clb_img{
+    all: unset;
+    
+}

@@ -103,7 +103,7 @@ function search() {
     let results = document.getElementById("results");
     results.innerHTML = "";
 
-    var pages = ['faq.html', 'schools.html', 'guides.html', 'ressources.html','esi.html','insea.html'];
+    var pages = ['faq.html', 'schools.html', 'guides.html', 'ressources.html','esi.html','insea.html','/ensmr/ensmr.html'];
 
     Promise.all(pages.map(page => fetch('pages/' + page).then(response => response.text())))
         .then(contents => {
