@@ -21,10 +21,9 @@ Our Engineering Schools Discovery Website aims to simplify this process by provi
 
 - **Search Functionality**: Easily search for engineering schools based on location, specialization, ranking, and more.
 - **Detailed School Profiles**: Access detailed information about each engineering school, including programs offered, faculty members, facilities, and admission requirements.
-- **IT Field Exploration**: Explore different fields within IT, such as artificial intelligence, cybersecurity, data science, and software engineering, and discover which engineering schools excel in these areas.
-- **User Reviews and Ratings**: Read reviews and ratings from current and former students to gain insights into the quality of education and student experiences at each school.
-- **Bookmarking and Comparison**: Save favorite schools for future reference and compare multiple schools side by side to make informed decisions.
-- **Community Engagement**: Join discussions, forums, and online communities to connect with peers, alumni, and industry professionals for advice and support.
+- **IT Field Exploration**: Explore different fields within IT, such as Machine Learning, cybersecurity, data science, and software engineering, and discover which engineering schools excel in these areas.
+- **User Reviews**: Read reviews from current and former students to gain insights into the quality of education and student experiences at each school.
+- **Community Engagement**: Join discussions in the comments with alumni, and industry professionals for advice and support.
 
 ## Installation
 
